@@ -1,15 +1,30 @@
-const video = document.getElementById('scrollVideo');
-let isScrolling = false;
+var video = document.getElementById('scrollVideo');
+var isPlaying = false;
 
-window.addEventListener('scroll', () => {
-  if (!isScrolling) {
+function playVideo() {
+  if (!isPlaying) {
     video.play();
-    isScrolling = true;
+    isPlaying = true;
   }
+}
 
-  clearTimeout(video.timer);
-  video.timer = setTimeout(() => {
+function pauseVideo() {
+  if (isPlaying) {
     video.pause();
-    isScrolling = false;
-  }, 200); // Adjust the delay here if needed
+    isPlaying = false;
+  }
+}
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  // You can adjust these values to control when the video starts and stops
+  var startScroll = 100; // Adjust this value to determine when video should start playing
+  var stopScroll = 300; // Adjust this value to determine when video should stop playing
+
+  if (scrollPosition >= startScroll && scrollPosition <= stopScroll) {
+    playVideo();
+  } else {
+    pauseVideo();
+  }
 });
