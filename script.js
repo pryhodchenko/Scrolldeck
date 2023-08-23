@@ -19,8 +19,8 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY || window.pageYOffset;
 
   // You can adjust these values to control when the video starts and stops
-  var startScroll = 100; // Adjust this value to determine when video should start playing
-  var stopScroll = 300; // Adjust this value to determine when video should stop playing
+  var startScroll = 1000; // Adjust this value to determine when video should start playing
+  var stopScroll = 3000; // Adjust this value to determine when video should stop playing
 
   if (scrollPosition >= startScroll && scrollPosition <= stopScroll) {
     playVideo();
