@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scrolling Video Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <video id="scrollVideo" autoplay loop muted>
-    <source src="video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <script src="script.js"></script>
-</body>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap-group">
+          <div class="text-wrapper">THIS IS</div>
+          <div class="text-wrapper-2">ScrollDeck</div>
+        </div>
+        <div class="rectangle"></div>
+      </div>
+    </div>
+    
+       <div id="reprezent-logo" class="scroll-logo">
+    <div class="content">
+      <video width="600" height="600" muted preload>
+        <source src="Logo.mp4" type="video/mp4">
+        Your browser does not support the HTML5 Video element.
+      </video>
+    </div>
+  </div>
+        <div id="reprezent-logo" class="scroll-logo">
+    <div class="content">
+      <video width="600" height="600" muted preload>
+        <source src="Logo.mp4" type="video/mp4">
+        Your browser does not support the HTML5 Video element.
+      </video>
+    </div>
+  </div>
+<!-- Include your custom JavaScript file for interactivity -->
+<script src="./script.js"></script> <!-- Make sure "script.js" is in the same directory -->
+      
+ </body>
 </html>

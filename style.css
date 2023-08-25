@@ -1,0 +1,83 @@
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 700px;
+  position: relative;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 449px;
+  height: 121px;
+  top: 245px;
+  left: 495px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 168px;
+  top: 0;
+  left: 140px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 12px;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  width: 3px;
+  height: 160px;
+  top: 430px;
+  left: 714px;
+  background-color: #6f6f6f;
+}
+
+
+#reprezent-logo {
+	background: #dfcece;
+}
+
+.scroll-logo {
+  height: 80vh; /* Set the height to half of the viewport height */
+}
+
+.content {
+  height: 100%; /* Occupy the entire height of the .scroll-logo container */
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%; /* Limit the video's height to the available space */
+}
+
+video {
+    width: 80%;
+}
+
+}
