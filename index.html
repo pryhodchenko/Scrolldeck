@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Cooperation offer</title>
+</head>
+
+<body>
+   
+    <div class="header"> 
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="64" viewBox="0 0 197 64" fill="none">
+                <path d="M0 9.33908V64H0.460428C5.08363 64 8.97519 59.7651 8.97519 54.7561V0H8.51476C3.82533 0 0 4.18736 0 9.33908ZM78.3579 9.33908V64H78.8183C83.4415 64 87.333 59.7651 87.333 54.7561V0H86.8726C82.1832 0 78.3579 4.19053 78.3579 9.33908ZM196.54 0C191.838 0 188.025 4.18736 188.025 9.33908V64H188.485C193.108 64 197 59.7651 197 54.7561V0H196.54ZM167.161 0.504387C166.074 0.857919 165.072 1.43544 164.22 2.20011C163.367 2.96478 162.682 3.89981 162.209 4.94553L139.39 53.8425L139.021 53.0304C136.498 47.5456 123.634 19.4236 116.536 4.7425C116.082 3.73341 115.423 2.83164 114.6 2.09596C113.778 1.36027 112.81 0.807162 111.761 0.472664C110.749 0.158138 109.683 0.0583277 108.63 0.179547C107.578 0.300767 106.561 0.640379 105.646 1.1769L105.192 1.43385L131.632 58.4866C133.524 62.0015 136.211 63.8795 139.415 63.8795C142.736 63.8795 145.385 62.0269 147.072 58.5184L173.733 1.43385L173.282 1.18325C172.364 0.64839 171.346 0.311778 170.292 0.194892C169.238 0.0780062 168.172 0.183413 167.161 0.504387ZM24.0873 31.8017C24.3617 31.5955 51.6531 11.4201 61.0508 4.17784C60.3739 3.17828 59.5077 2.32279 58.5017 1.66034C57.4957 0.997895 56.3698 0.541482 55.1883 0.317224C54.7146 0.232667 54.2344 0.190207 53.7534 0.190335C52.0114 0.188937 50.3181 0.767874 48.9378 1.83673L15.8469 27.2813C15.0973 27.8622 14.4912 28.6095 14.0759 29.4649C13.6607 30.3202 13.4475 31.2605 13.453 32.2124C13.4585 33.1643 13.6825 34.102 14.1076 34.9525C14.5327 35.8029 15.1474 36.5431 15.9037 37.1152L49.6726 62.4297C50.4865 63.0269 51.4159 63.4457 52.4007 63.6594C53.3855 63.873 54.4038 63.8767 55.3901 63.6701C57.8304 63.1698 59.9802 61.7311 61.382 59.6604L23.6332 32.1348L24.0873 31.8017Z" fill="white"/>
+                </svg>
+        </div>
+        <div  class="main">
+        <h1>Cooperation offer</h1>
+        </div>
+        <div class="subtitle">
+            <p>
+                Special offer of cooperation with unique features including Smart TV branding options
+            </p>
+        </div>
+    </div>
+
+    <div style="height: 200vh;">
+        <div id="scrolly-video">   
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+      <script type="text/javascript">
+        new ScrollyVideo({
+          scrollyVideoContainer: "scrolly-video",
+          src: "TV fade 2.mp4",
+          full:true,
+          frameThreshold:0.1,
+          transitionSpeed:2,
+         // useWebCodecs:true,
+
+        });
+        </script>
+    <div class="title2">
+        <h1 style="color: black;">Smart TV is our only business</h1>
+    </div>
+
+    <div class="numbers">
+        <div class="block"><div class="textnum" > <span class="count1">0 </span> mln </div> <div class="textdescriptor"> TVs sold in total </div></div>
+        <div class="block"><div class="textnum"> <span class="count2">0</span> </div> <div class="textdescriptor"> countries of distribution </div> </div>
+        <div class="block"><div class="textnum">  <span class="count3">0</span>  </div> <div class="textdescriptor"> years of TV business experience </div> </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <div class="header"></div>
+    
+    <script>
+    var filesScanned = { first: 0, two: 0, three: 0 };
+
+    const scanning = anime({
+      targets: filesScanned,
+      autoplay: true,
+      duration: 2000,
+      first: 1.5,
+      two: 14,
+      three: 16,
+      easing: 'linear',
+      round: 1,
+      update: function() {
+        var first = document.querySelector('.count1');
+        first.innerHTML = filesScanned.first;
+        
+        var second = document.querySelector('.count2');
+        second.innerHTML = filesScanned.two;
+
+        var three = document.querySelector('.count3');
+        three.innerHTML = filesScanned.three
+      }
+    });
+    
+    document.querySelector('.play-scan').onclick = scanning.restart;
+
+    </script>
+
+    <script>
+        // Create animations for text wrappers
+
+        const logo_animation = anime({
+          targets: ['.logo'],
+          translateY: 200,
+          scale:1.4,
+          autoplay: false,
+        });
+
+        const header_animation=anime({
+            targets: '.header',
+            backgroundColor: '#000000',
+            autoplay: false,
+        })
+    
+        const title_animation = anime({
+          targets: ['.main','.subtitle'],
+          translateY: 400,
+          autoplay: false,
+        });
+
+        const title2_animation = anime({
+            targets:'.title2',
+            translateY:-100,
+            autoplay:false,
+        })
+    
+        // Calculate scroll percentage
+        const scrollPercent = () => {
+          const bodyST = document.body.scrollTop;
+          const docST = document.documentElement.scrollTop;
+          const docSH = document.documentElement.scrollHeight;
+          const docCH = document.documentElement.clientHeight;
+          return (docST + bodyST) / (docSH - docCH) * 100;
+        };
+    
+        // Trigger animations on scroll
+        window.onscroll = () => {
+            logo_animation.seek((scrollPercent() / 100) * logo_animation.duration);
+            title_animation.seek((scrollPercent() / 100) * title_animation.duration);
+            header_animation.seek((scrollPercent() / 100) * header_animation.duration);
+            title2_animation.seek((scrollPercent()/100) * title2_animation.duration);
+            scanning.seek((scrollPercent()/100) * scanning.duration);
+        };
+    </script>
+      
+</body>
+</html>

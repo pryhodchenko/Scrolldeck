@@ -1,0 +1,98 @@
+/* Reset margin and padding for all elements */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFEFE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main
+{
+    position: relative;
+    top: 60px;
+}
+
+.subtitle
+{
+    top: 120px;
+    width: 600px;
+    position: relative;
+    top: 30px;
+    color: #FFFEFE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.header .logo
+{
+    position: relative;
+top: 30px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction:row;
+    column-gap: 60px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    height: 256px;
+    box-shadow: 0px 0px 21px #0f5ad333;
+   
+}
+
+.textnum{
+    margin-top: 80px;
+    font-family: "Montserrat-light", Helvetica;
+    font-weight: 100;
+    color: #000000;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+
+.textdescriptor{
+    margin-top: 20px ;
+    font-family: "Montserrat-light", Helvetica;
+    font-weight: 100;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 24px;
+}
