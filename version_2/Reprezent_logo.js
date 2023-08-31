@@ -14,12 +14,19 @@ const preloadImages = () => {
   }
 };
 
-const img = new Image()
+const img = new Image();
 img.src = currentFrame(1);
-canvas.width=660;
-canvas.height=372;
-img.onload=function(){
-  context.drawImage(img, 0, 0);
+resizeCanvas(); // Call the function to resize the canvas initially
+window.addEventListener('resize', resizeCanvas); // Call the function when the window is resized
+
+// Function to resize the canvas based on device type
+function resizeCanvas() {
+  const isMobile = window.innerWidth <= 768; // Set your mobile breakpoint here
+  canvas.width = isMobile ? 330 : 660; // Set canvas width based on device type
+  canvas.height = isMobile ? 186 : 372; // Set canvas height based on device type
+  img.onload = function () {
+    context.drawImage(img, 0, 0);
+  };
 }
 
 const updateImage = index => {
@@ -28,16 +35,9 @@ const updateImage = index => {
 }
 
 window.addEventListener('scroll', () => {
-    
   const scrollTop = html.scrollTop;
-  //console.log("scrollTop:", scrollTop);
-
-  //const maxScrollTop = html.scrollHeight - window.innerHeight; // Original snippet code, too long scroll
-  const divLogo = document.querySelector('.logo-container'); // Selecting my container with logo
-  const maxScrollTop = divLogo.offsetHeight - img.height;  // Returning my container height + substracting image heigth
-  // console.log("MaxscrollTop:", maxScrollTop);
-  
-  
+  const divLogo = document.querySelector('.logo-container');
+  const maxScrollTop = divLogo.offsetHeight - img.height;
   const scrollFraction = scrollTop / maxScrollTop;
   const frameIndex = Math.min(
     frameCount - 1,
@@ -47,4 +47,4 @@ window.addEventListener('scroll', () => {
   requestAnimationFrame(() => updateImage(frameIndex + 1))
 });
 
-preloadImages()
+preloadImages();
