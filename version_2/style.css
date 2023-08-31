@@ -1,6 +1,5 @@
 html {
   height: 100vh;
-  font-size: 16px; /* Setting a base font size */
 }
 
 body {
@@ -15,7 +14,7 @@ h1 {
   color: #FFFEFE;
   text-align: center;
   font-family: Montserrat;
-  font-size: 7rem; /* Using rem units for font size */
+  font-size: 7rem; /* Desktop font size */
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -25,7 +24,7 @@ h2 {
   color: #FFFEFE;
   text-align: center;
   font-family: Montserrat;
-  font-size: 1.875rem; /* Using rem units for font size */
+  font-size: 1.875rem; /* Desktop font size */
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -37,11 +36,35 @@ h4 {
   color: red;
   text-align: center;
   font-family: Montserrat;
-  font-size: 1rem; /* Using rem units for font size */
+  font-size: 1rem; /* Desktop font size */
   font-style: normal;
   font-weight: 200;
   line-height: normal;
   letter-spacing: 0.25rem; /* Adjusted letter spacing */
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6rem; /* Adjusted font size for mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  h4 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+    letter-spacing: 0.25rem; /* Adjusted letter spacing for mobile */
+  }
+  #reprezent-logo {
+    position: sticky;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+  }
 }
 
 .logo-container {
@@ -55,7 +78,7 @@ h4 {
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
-  max-width: 250px;
+  max-width: 30%;
   max-height: 100vh;
 }
 
@@ -72,6 +95,6 @@ h4 {
 
 .Intro_text .title {
   opacity: 0;
-  transition: opacity 1.5s ease, transform 2s ease; /* Adding scale transition */
+  transition: opacity 1.7s ease, transform 2s ease; /* Adding scale transition */
   transform: scale(0.9); /* Initial scale for .title */
 }

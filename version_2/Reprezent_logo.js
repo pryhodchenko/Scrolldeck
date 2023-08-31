@@ -21,9 +21,9 @@ window.addEventListener('resize', resizeCanvas); // Call the function when the w
 
 // Function to resize the canvas based on device type
 function resizeCanvas() {
-  const isMobile = window.innerWidth <= 768; // Set your mobile breakpoint here
-  canvas.width = isMobile ? 330 : 660; // Set canvas width based on device type
-  canvas.height = isMobile ? 186 : 372; // Set canvas height based on device type
+  const isMobile = window.innerWidth <= 850; // Set your mobile breakpoint here
+  canvas.width = isMobile ? 660 : 660; // Set canvas width based on device type
+  canvas.height = isMobile ? 372 : 372; // Set canvas height based on device type
   img.onload = function () {
     context.drawImage(img, 0, 0);
   };
