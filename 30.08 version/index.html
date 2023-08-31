@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reprezent scroll deck</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Creating canvas -->
+<div class="logo-container"><canvas id="reprezent-logo"></canvas></div>
+<div class="Intro_text"><h4 class="test">INTRODUCING</h4><h1 class="title">Scroll Deck</h1></div>
+<div style="background-color: blue;height: 2000px;"></div>
+
+<!-- Script with logo animation -->
+<script src="Reprezent_logo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="intersection test.js">
+  /*   
+    const scrollPercent = () => {
+    const bodyST = document.body.scrollTop;
+    const docST = document.documentElement.scrollTop;
+    const docSH = document.documentElement.scrollHeight;
+    const docCH = document.documentElement.clientHeight;
+
+    console.log("Body Scroll Top:", bodyST);
+  console.log("Document Scroll Top:", docST);
+  console.log("Document Scroll Height:", docSH);
+  console.log("Document Client Height:", docCH);
+
+  // (~730+0)/(3439-837)=0,2805534204*100=28
+  // 28/100
+    
+    
+    return (docST + bodyST) / (docSH - docCH) * 100
+  }
+  
+  /**
+   * Add a scroll listener on the window object to
+   * control animations based on scroll percentage.
+   */
+/*  window.onscroll = () => {
+    const percentage = scrollPercent();
+  console.log("Scroll Percentage:", percentage);
+    divAnimation.seek((scrollPercent() / 100) * divAnimation.duration);
+  };
+
+</script>
+  
+ 
+ 
+ 
+
+
+  
+</body>
+</html>

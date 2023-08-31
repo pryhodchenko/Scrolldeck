@@ -1,0 +1,94 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #FFFEFE;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h2 {
+  color: #FFFEFE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    color: red;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.logo-container{
+  width: 100%;
+  height: 150vh;
+  background-color: black;
+}
+
+#reprezent-logo {
+  position: sticky;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  max-width: 250px;
+  max-height: 100vh;
+}
+
+.Intro_text {
+  position: static;
+  background-color: black;
+}
+
+.Intro_text .test {
+  opacity: 0;
+  transition: opacity 1.4s ease; /* Adding transition property */
+}
+
+.Intro_text .title {
+  opacity: 0;
+  transition: opacity 2s ease; /* Adding transition property */
+}
+
+
+
+/*
+body {
+  height: 200vh;
+  background: #000;
+}
+
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 250px;
+  max-height: 100vh;
+}
+*/
